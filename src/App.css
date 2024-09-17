@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  font-size: 20px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: aqua;
+  
+}
+
+.section form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: auto;
+  width: 400px;
+  border: 2px solid grey;
+  background-color: rgb(64, 216, 216);
+  border-radius: 10px;
+}
+
+.section form div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 320px;
+}
+
+.section form div input {
+  padding: 7px 3px;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  background-color: rgb(205, 240, 240);
+  
+}
+
+.section form h3 {
+  font-size: 38px;
+  letter-spacing: 1.5px;
+  margin-bottom: 15px;
+}
+
+.section form button {
+  background-color: rgb(73, 73, 233);
+  padding: 10px 30px;
+  width: 320px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+section form button:hover {
+  background-color: rgb(126, 17, 136);
+}
+
+
+.signUp{
+cursor: pointer;
+font-weight: 800px;
+color: #cc1c1c;
+
+}
+.alreadyRegister{
+  cursor: pointer;
+}
+
+
+nav {
+  padding: 20px 40px;
+  justify-content: flex-end;
+  background: #111;
+  color: #fff;
+  gap: 20px;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.home {
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.home h1 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+.home .Add-task {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home .Add-task input {
+  padding: 7px 3px;
+  font-size: 20px;
+}
+
+.home .Add-task button {
+  padding: 10px;
+  border: none;
+  background: #4127b4;
+  color: #fff;
+  cursor: pointer;
+}
+
+.home .Add-task button:hover {
+  background-color: aqua;
+}
+
+.home .my-task {
+  display: flex;
+  gap: 13px;
+  flex-direction: column;
+}
+
+.home .my-task .data {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 5px;
+  gap: 10px;
+  max-width: 80%;
+
+}
+
+.home .my-task .data p:first-child {
+  font-size: 25px;
+  font-weight: 600px;
+  margin-bottom: 10px;
+}
+
+.home .my-task .data div {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  align-items: center;
+}
+
+
+
+/* Custom adding CSS */
+
+.textarea,input{
+  border: none;
+  background-color: #65e77b;
+  border-radius: 10px;
+}
+
+.btn{
+  display: flex; 
+   flex-direction: column;
+  max-width: 18%;
+  justify-content:end;
+  
+  gap: 8px;
+}
+.btn button:first-child{
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(249, 252, 69);
+  color: #070606;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn button:last-child{
+  padding: 10px 30px;
+  border: none;
+  background-color: rgb(233, 56, 56);
+  color: #070606;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.logo{
+float: left
+
+};
+
+
+.home .my-task {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.home .my-task .task-container {
+  display: flex;
+  gap: 20px; /* Adjust gap as needed */
+  align-items: flex-start; /* Align items at the top */
+}
+
+.home .my-task .data {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid grey;
+  border-radius: 10px;
+  padding: 10px 5px;
+  gap: 10px;
+  max-width: 80%; /* Adjust width as needed */
+  flex: 1; /* Allows the element to grow and fill available space */
+}
+
+.home .my-task .btn {
+  display: flex;
+  flex-direction: column;
+  max-width: 18%; /* Maximum width for the buttons */
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.btn button:first-child,
+.btn button:last-child {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%; /* Make buttons take full width */
+  box-sizing: border-box;
+}
+
+.btn button:first-child {
+  background-color: rgb(249, 252, 69);
+  color: #070606;
+}
+
+.btn button:last-child {
+  background-color: rgb(233, 56, 56);
+  color: #070606;
+}
+
+
+
+/* Blogs CSS Startted */
+
+/* BlogPostList.css */
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.blog-post {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.blog-post:hover {
+  transform: scale(1.05);
+}
+
+.blog-post h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.blog-post p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
